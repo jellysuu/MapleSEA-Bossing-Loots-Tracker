@@ -45,7 +45,7 @@
     var count6 = (ocr_text.match(/Low Spell/g) || []).length;
     var count7 = (ocr_text.match(/Reindeer Milk/g) || []).length;
     
-    $('#compiled_loots').append(`
+    $('.compiled_loots').append(`
       Magic Crystal x${count1}
       Sunset Dew x${count2}
       Spell Trace x${count3}
