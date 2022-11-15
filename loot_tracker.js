@@ -37,12 +37,24 @@
 
   function generate_boss_loots(){
     var ocr_text = $('#ocr_text').val();
-    var count = (ocr_text.match(/Magic Crystal/g) || []).length;
-    console.log("Magic Crystals: " + count);
+    var count1 = (ocr_text.match(/Magic Crystal/g) || []).length;
+    var count2 = (ocr_text.match(/Sunset Dew/g) || []).length;
+    var count3 = (ocr_text.match(/Spell Trace/g) || []).length;
+    var count4 = (ocr_text.match(/Honor/g) || []).length;
+    var count5 = (ocr_text.match(/High Spell/g) || []).length;
+    var count6 = (ocr_text.match(/Low Spell/g) || []).length;
+    var count7 = (ocr_text.match(/Reindeer Milk/g) || []).length;
     
+    $('#compiled_loots').append(`
+      Magic Crystal x${count1}
+      Sunset Dew x${count2}
+      Spell Trace x${count3}
+      Honor x${count4}
+      High Spell x${count5}
+      Low Spell x${count6}
+      Reindeer Milk x${count7}
+    `);
   }
-
-  console.log("test");
 
 
 
