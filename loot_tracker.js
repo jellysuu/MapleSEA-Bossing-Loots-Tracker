@@ -46,12 +46,12 @@
     var count7 = (ocr_text.match(/Reindeer Milk/g) || []).length;
     
     $('.compiled_loots').append(`
-      Magic Crystal x${count1}\n
-      Sunset Dew x${count2}\n
-      Spell Trace x${count3}\n
-      Honor x${count4}\n
-      High Spell x${count5}\n
-      Low Spell x${count6}\n
+      Magic Crystal x${count1}\n<br>
+      Sunset Dew x${count2}\n<br>
+      Spell Trace x${count3}\n<br>
+      Honor x${count4}\n<br>
+      High Spell x${count5}\n<br>
+      Low Spell x${count6}\n<br>
       Reindeer Milk x${count7}
     `);
   }
