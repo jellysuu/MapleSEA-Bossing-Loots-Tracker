@@ -37,8 +37,8 @@
 
   function generate_boss_loots(){
     var ocr_text = $('#ocr_text').val();
-    console.log(ocr_text.search( 'Magic Crystal' ));
-    console.log(ocr_text.search( 'test' ));
+    var count = (ocr_text.match(/Magic Crystal/g) || []).length;
+    console.log("Magic Crystals: " + count);
     
   }
 
