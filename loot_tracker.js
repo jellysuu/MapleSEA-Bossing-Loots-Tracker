@@ -36,7 +36,10 @@
   // =============== End: Document Ready ===============
 
   function generate_boss_loots(){
-    console.log($('#ocr_text').val());
+    var ocr_text = $('#ocr_text').val();
+    console.log(ocr_text.search( 'Magic Crystal' ));
+    console.log(ocr_text.search( 'test' ));
+    
   }
 
   console.log("test");
