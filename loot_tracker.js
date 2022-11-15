@@ -24,11 +24,20 @@
 
   // =============== Start: Document Ready ===============
   $( document ).ready(function() {
+    const file = document.getElementById("file");
 
+    window.addEventListener('paste', e => {
+      file.files = e.clipboardData.files;
+      const [image_file] = file.files
+      if(image_file)
+      google_calendar_upload_image_preview.src = URL.createObjectURL(image_file);
+    });
   }); 
   // =============== End: Document Ready ===============
 
-
+  function generate_boss_loots(){
+    console.log($('#ocr_text').val());
+  }
 
   console.log("test");
 
